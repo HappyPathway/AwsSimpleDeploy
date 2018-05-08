@@ -15,7 +15,7 @@ data "consul_keys" "aws_infra" {
   
   key {
     name    = "ami"
-    path    = "services/${var.service_name}/${var.service_versin}/ami"
+    path    = "services/${var.service_name}/${var.service_version}/ami"
     default = ""
   }
 
