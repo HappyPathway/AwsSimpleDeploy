@@ -7,4 +7,5 @@ module "ops_config" {
   vault_address = "${var.vault_address}"
   hosts = "${aws_instance.web.instance_ips}"
   triggers = "${aws_instance.web.instance_ids}"
+  env = "${var.env}"
 }
