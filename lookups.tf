@@ -3,12 +3,12 @@ data "consul_keys" "aws_infra" {
   
   key {
     name    = "subnet_id"
-    path    = "services/${var.env}/${var.service_name}/subnet_id"
+    path    = "environments/${var.env}/${var.service_name}/subnet_id"
   }
   
   key {
     name    = "security_group"
-    path    = "services/${var.env}/${var.service_name}/security_group"
+    path    = "environments/${var.env}/${var.service_name}/security_group"
   }
   
   key {
