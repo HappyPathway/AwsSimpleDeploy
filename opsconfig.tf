@@ -6,4 +6,5 @@ module "ops_config" {
   consul_address = "${var.consul_address}"
   vault_address = "${var.vault_address}"
   hosts = "${aws_instance.web.instance_ips}"
+  triggers = "${aws_instance.web.instance_ids}"
 }
