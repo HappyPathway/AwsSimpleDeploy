@@ -29,5 +29,5 @@ variable "env" {
 variable "service_version" {}
 
 variable "vault_address" {
-    default = "http://54.209.49.254:8200"
+    default = "http://consul.ops.happypathway.com:8200"
 }
